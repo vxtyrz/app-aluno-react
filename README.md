@@ -122,8 +122,7 @@ npm run preview
 
 ## 👥 Equipe
 
-- [Nome do integrante 1]
-- [Nome do integrante 2]
+- Vitor Almeida
 
 ---
 
