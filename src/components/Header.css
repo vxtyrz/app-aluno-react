@@ -1,0 +1,48 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 64px;
+  background: var(--cor-superficie);
+  border-bottom: 1px solid var(--cor-borda);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.header__esquerda {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--cor-texto-primario);
+  padding: 4px;
+  line-height: 1;
+}
+
+.header__titulo {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--cor-texto-primario);
+  margin: 0;
+}
+
+.header__saudacao {
+  font-size: 0.9375rem;
+  color: var(--cor-texto-secundario);
+}
+
+@media (max-width: 768px) {
+  .header__menu-btn {
+    display: block;
+  }
+}

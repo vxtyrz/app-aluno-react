@@ -1,0 +1,113 @@
+.perfil {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.perfil__card-principal {
+  text-align: center;
+}
+
+.perfil__avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--cor-primaria);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.perfil__nome {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--cor-texto-primario);
+  margin: 0 0 4px;
+}
+
+.perfil__email {
+  font-size: 0.875rem;
+  color: var(--cor-texto-secundario);
+  margin: 0 0 4px;
+}
+
+.perfil__matricula {
+  font-size: 0.8125rem;
+  color: var(--cor-texto-secundario);
+  margin: 0;
+}
+
+.perfil__sucesso {
+  margin: 12px 0 0;
+  font-size: 0.875rem;
+  color: #16a34a;
+}
+
+.perfil__card-cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.perfil__secao-titulo {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--cor-texto-primario);
+  margin: 0;
+}
+
+.perfil__dados {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+}
+
+.perfil__dado {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.perfil__dado:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.perfil__dado dt {
+  width: 120px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--cor-texto-secundario);
+  flex-shrink: 0;
+}
+
+.perfil__dado dd {
+  font-size: 0.9375rem;
+  color: var(--cor-texto-primario);
+  margin: 0;
+}
+
+.perfil__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.perfil__form-acoes {
+  display: flex;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .perfil {
+    grid-template-columns: 1fr;
+  }
+}

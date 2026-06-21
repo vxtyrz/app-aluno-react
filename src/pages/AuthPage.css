@@ -1,0 +1,137 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cor-fundo);
+  padding: 24px 16px;
+}
+
+.auth-page__card {
+  background: var(--cor-superficie);
+  border-radius: 16px;
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.auth-page__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  justify-content: center;
+}
+
+.auth-page__logo-icone {
+  font-size: 2rem;
+}
+
+.auth-page__logo-texto {
+  font-size: 1.375rem;
+  font-weight: 800;
+  color: var(--cor-primaria);
+  margin: 0;
+}
+
+.auth-page__titulo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--cor-texto-primario);
+  margin: 0 0 6px;
+  text-align: center;
+}
+
+.auth-page__subtitulo {
+  font-size: 0.9375rem;
+  color: var(--cor-texto-secundario);
+  margin: 0 0 28px;
+  text-align: center;
+}
+
+.auth-page__form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-page__erro-geral {
+  background: rgba(220, 38, 38, 0.08);
+  color: var(--cor-erro);
+  border: 1px solid rgba(220, 38, 38, 0.25);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.auth-page__link-direita {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -6px;
+}
+
+.auth-page__link {
+  color: var(--cor-primaria);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.auth-page__link:hover {
+  text-decoration: underline;
+}
+
+.auth-page__rodape {
+  text-align: center;
+  margin: 20px 0 0;
+  font-size: 0.9375rem;
+  color: var(--cor-texto-secundario);
+}
+
+.auth-page__steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.auth-page__step {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid var(--cor-borda);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--cor-texto-secundario);
+}
+
+.auth-page__step--ativo {
+  background: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+  color: #fff;
+}
+
+.auth-page__step--concluido {
+  background: #16a34a;
+  border-color: #16a34a;
+  color: #fff;
+}
+
+.auth-page__step-linha {
+  flex: 1;
+  max-width: 40px;
+  height: 2px;
+  background: var(--cor-borda);
+}
+
+@media (max-width: 480px) {
+  .auth-page__card {
+    padding: 28px 20px;
+  }
+}

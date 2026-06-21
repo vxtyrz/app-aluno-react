@@ -1,0 +1,132 @@
+.dashboard__boas-vindas {
+  margin-bottom: 28px;
+}
+
+.dashboard__saudacao {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--cor-texto-primario);
+  margin: 0 0 6px;
+}
+
+.dashboard__subtitulo {
+  font-size: 0.9375rem;
+  color: var(--cor-texto-secundario);
+  margin: 0;
+}
+
+.dashboard__resumo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.dashboard__resumo-card {
+  text-align: center;
+}
+
+.dashboard__resumo-icone {
+  font-size: 1.75rem;
+  margin-bottom: 8px;
+}
+
+.dashboard__resumo-valor {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--cor-primaria);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.dashboard__resumo-titulo {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--cor-texto-primario);
+}
+
+.dashboard__resumo-desc {
+  font-size: 0.8125rem;
+  color: var(--cor-texto-secundario);
+}
+
+.dashboard__secao-titulo {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--cor-texto-primario);
+  margin: 0 0 16px;
+}
+
+.dashboard__estado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 32px;
+  color: var(--cor-texto-secundario);
+}
+
+.dashboard__estado--erro {
+  color: var(--cor-erro);
+}
+
+.dashboard__retry {
+  padding: 8px 16px;
+  border: 1px solid var(--cor-erro);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--cor-erro);
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.dashboard__avisos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dashboard__aviso-titulo {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--cor-texto-primario);
+  margin: 0 0 6px;
+  text-transform: capitalize;
+}
+
+.dashboard__aviso-corpo {
+  font-size: 0.875rem;
+  color: var(--cor-texto-secundario);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--cor-borda);
+  border-top-color: var(--cor-primaria);
+  border-radius: 50%;
+  animation: girar 0.7s linear infinite;
+}
+
+@keyframes girar {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 900px) {
+  .dashboard__resumo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard__resumo {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .dashboard__saudacao {
+    font-size: 1.25rem;
+  }
+}

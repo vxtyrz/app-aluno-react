@@ -1,0 +1,65 @@
+.disciplina-card {
+  background: var(--cor-superficie);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: var(--sombra-card);
+  border-left: 4px solid var(--cor-primaria);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.disciplina-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.disciplina-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.disciplina-card__nome {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--cor-texto-primario);
+  margin: 0;
+}
+
+.disciplina-card__badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.disciplina-card__badge--cursando {
+  background: rgba(67, 97, 238, 0.12);
+  color: var(--cor-primaria);
+}
+
+.disciplina-card__badge--aprovado {
+  background: rgba(22, 163, 74, 0.12);
+  color: #16a34a;
+}
+
+.disciplina-card__badge--reprovado {
+  background: rgba(220, 38, 38, 0.12);
+  color: var(--cor-erro);
+}
+
+.disciplina-card__professor {
+  font-size: 0.875rem;
+  color: var(--cor-texto-secundario);
+  margin: 0 0 10px;
+}
+
+.disciplina-card__info {
+  display: flex;
+  gap: 8px;
+  font-size: 0.8125rem;
+  color: var(--cor-texto-secundario);
+}

@@ -1,0 +1,6 @@
+.card {
+  background: var(--cor-superficie);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: var(--sombra-card);
+}

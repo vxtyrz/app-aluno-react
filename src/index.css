@@ -1,0 +1,74 @@
+/* ── Variáveis de design ── */
+:root {
+  --cor-primaria: #4361ee;
+  --cor-primaria-escura: #3451d1;
+
+  --cor-fundo: #f0f2f8;
+  --cor-superficie: #ffffff;
+  --cor-sidebar: #1e2140;
+  --cor-fundo-input: #f8f9fe;
+
+  --cor-texto-primario: #1a1d2e;
+  --cor-texto-secundario: #6b7280;
+
+  --cor-borda: #e5e7eb;
+  --cor-erro: #dc2626;
+
+  --sombra-card: 0 2px 8px rgba(0, 0, 0, 0.07);
+
+  --fonte-base: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--fonte-base);
+  background: var(--cor-fundo);
+  color: var(--cor-texto-primario);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ── Acessibilidade — foco visível ── */
+:focus-visible {
+  outline: 2px solid var(--cor-primaria);
+  outline-offset: 2px;
+}
+
+/* ── AuthPage: sucesso ── */
+.auth-page__sucesso {
+  background: rgba(22, 163, 74, 0.08);
+  color: #16a34a;
+  border: 1px solid rgba(22, 163, 74, 0.25);
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
