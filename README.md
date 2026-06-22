@@ -60,7 +60,7 @@ app-aluno-react/
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/<seu-usuario>/app-aluno-react.git
+git clone https://github.com/vxtyrz/app-aluno-react.git
 
 # 2. Acesse a pasta do projeto
 cd app-aluno-react
