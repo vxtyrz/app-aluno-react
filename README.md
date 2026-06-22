@@ -128,3 +128,8 @@ npm run preview
 
 Centro Universitário SATC — Engenharia de Software  
 Disciplina: Front-end | Professor: Lucas Beskow Vergara
+
+
+CASO NÃO RODAR
+
+- Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser (Proibição de execução de SCRIPTS windows)
